@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
 该项目仅供T11项目使用,项目包含APP中使用的素有底层工具函数
                        DESC
 
-  s.homepage         = 'http://10.128.62.31/t11_app/TFoundation'
+  s.homepage         = 'http://nas.iliunian.com:82/apple/TFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LiuNian' => 'i19850511@gmail.com' }
-  s.source           = { :git => 'git@10.128.62.31:t11_app/tfoundation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://nas.iliunian.com:82/apple/TFoundation.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
