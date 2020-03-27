@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.0'
-  s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置),类目等组件'
+  s.version          = '0.1.1'
+  s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
-该项目仅供T11项目使用,项目包含APP中使用的素有底层工具函数
+该项目仅供T11项目使用,项目包含APP中使用的底层工具函数
                        DESC
 
   s.homepage         = 'http://nas.iliunian.com:82/apple/TFoundation'
@@ -13,29 +13,94 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'http://nas.iliunian.com:82/apple/TFoundation.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
+  
   s.requires_arc = true
   
-  s.subspec 'Cache' do |cache|
-	  cache.dependency 'DFCache'
-	  cache.public_header_files = 'TFoundation/Cache/*.h'
-	  cache.source_files = 'TFoundation/Cache/**/*'
+  s.subspec 'Internal' do |ss|
+	  ss.public_header_files = 'TFoundation/Internal/*.h'
+	  ss.source_files = 'TFoundation/Internal/**/*'
+  end
+  
+  s.subspec 'Cache' do |ss|
+	  ss.dependency 'DFCache'
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Cache/*.h'
+	  ss.source_files = 'TFoundation/Cache/**/*'
   end
 
-  s.subspec 'Preferences' do |pres|
-	  pres.dependency 'TFoundation/Cache'
-	  pres.public_header_files = 'TFoundation/Preferences/*.h'
-	  pres.source_files = 'TFoundation/Preferences/**/*'
+  s.subspec 'Preferences' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.dependency 'TFoundation/Cache'
+	  ss.public_header_files = 'TFoundation/Preferences/*.h'
+	  ss.source_files = 'TFoundation/Preferences/**/*'
   end
   
-  s.subspec 'NetWork' do |nw|
-	  nw.dependency 'AFNetworking'
-	  nw.public_header_files = 'TFoundation/NetWork/*.h'
-	  nw.source_files = 'TFoundation/NetWork/**/*'
+  s.subspec 'NetWork' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.dependency 'AFNetworking'
+	  ss.public_header_files = 'TFoundation/NetWork/*.h'
+	  ss.source_files = 'TFoundation/NetWork/**/*'
   end
   
-  s.subspec 'Category' do |cg|
-	   cg.dependency 'GTMBase64'
-	   cg.public_header_files = 'TFoundation/Category/*.h'
-	   cg.source_files = 'TFoundation/Category/**/*'
-   end
+  s.subspec 'Category' do |ss|
+	   ss.dependency 'GTMBase64'
+	   ss.dependency 'TFoundation/Internal'
+	   ss.dependency 'TFoundation/DataSafe'
+	   ss.public_header_files = 'TFoundation/Category/*.h'
+	   ss.source_files = 'TFoundation/Category/**/*'
+  end
+  s.subspec 'Hard' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Hard/*.h'
+	  ss.source_files = 'TFoundation/Hard/**/*'
+  end
+  
+  s.subspec 'DataSafe' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.dependency 'TFoundation/Hard'
+	  ss.public_header_files = 'TFoundation/DataSafe/*.h'
+	  ss.source_files = 'TFoundation/DataSafe/**/*'
+  end
+  
+  s.subspec 'ArchiveData' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.dependency 'TFoundation/FileManager'
+	  ss.public_header_files = 'TFoundation/ArchiveData/*.h'
+	  ss.source_files = 'TFoundation/ArchiveData/**/*'
+  end
+  
+  s.subspec 'FileManager' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/FileManager/*.h'
+	  ss.source_files = 'TFoundation/FileManager/**/*'
+  end
+  
+  s.subspec 'UserDefault' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/UserDefault/*.h'
+	  ss.source_files = 'TFoundation/UserDefault/**/*'
+  end
+  
+  s.subspec 'Keychain' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Keychain/*.h'
+	  ss.source_files = 'TFoundation/Keychain/**/*'
+  end
+  
+  s.subspec 'Device' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Device/*.h'
+	  ss.source_files = 'TFoundation/Device/**/*'
+  end
+  
+  s.subspec 'Audio' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Audio/*.h'
+	  ss.source_files = 'TFoundation/Audio/**/*'
+	  ss.frameworks = 'AudioToolBox'
+  end
+  
+  s.frameworks = "Foundation", "MobileCoreServices", "CoreServices"
+  s.xcconfig = {"OHTER_LINKER_FLAGS" => "-OjbC"}
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 end

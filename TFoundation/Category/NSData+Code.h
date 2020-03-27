@@ -7,16 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
-void *NewBase64Decode(
-	const char *inputBuffer,
-	size_t length,
-	size_t *outputLength);
+void * _Nullable NewBase64Decode(const char * _Nonnull inputBuffer,
+								 size_t length,
+								 size_t * _Nonnull outputLength);
 
-char *NewBase64Encode(
-	const void *inputBuffer,
-	size_t length,
-	bool separateLines,
-	size_t *outputLength);
+char * _Nullable NewBase64Encode(const void * _Nonnull inputBuffer,
+								 size_t length,
+								 bool separateLines,
+								 size_t * _Nonnull outputLength);
 
 NS_ASSUME_NONNULL_BEGIN
 

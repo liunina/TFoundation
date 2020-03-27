@@ -169,8 +169,7 @@ char *NewBase64Encode(
 	// Allocate the output buffer
 	//
 	char *outputBuffer = (char *)malloc(outputBufferSize);
-	if (!outputBuffer)
-	{
+	if (!outputBuffer) {
 		return NULL;
 	}
 
