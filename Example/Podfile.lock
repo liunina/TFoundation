@@ -27,51 +27,54 @@ PODS:
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
   - Specta (1.0.7)
-  - TFoundation (0.1.1):
-    - TFoundation/ArchiveData (= 0.1.1)
-    - TFoundation/Audio (= 0.1.1)
-    - TFoundation/Cache (= 0.1.1)
-    - TFoundation/Category (= 0.1.1)
-    - TFoundation/DataSafe (= 0.1.1)
-    - TFoundation/Device (= 0.1.1)
-    - TFoundation/FileManager (= 0.1.1)
-    - TFoundation/Hard (= 0.1.1)
-    - TFoundation/Internal (= 0.1.1)
-    - TFoundation/Keychain (= 0.1.1)
-    - TFoundation/NetWork (= 0.1.1)
-    - TFoundation/Preferences (= 0.1.1)
-    - TFoundation/UserDefault (= 0.1.1)
-  - TFoundation/ArchiveData (0.1.1):
+  - TFoundation (0.1.2):
+    - TFoundation/ArchiveData (= 0.1.2)
+    - TFoundation/Cache (= 0.1.2)
+    - TFoundation/Category (= 0.1.2)
+    - TFoundation/DataSafe (= 0.1.2)
+    - TFoundation/Dealloc (= 0.1.2)
+    - TFoundation/Device (= 0.1.2)
+    - TFoundation/FileManager (= 0.1.2)
+    - TFoundation/Hard (= 0.1.2)
+    - TFoundation/Internal (= 0.1.2)
+    - TFoundation/Keychain (= 0.1.2)
+    - TFoundation/Media (= 0.1.2)
+    - TFoundation/NetWork (= 0.1.2)
+    - TFoundation/Preferences (= 0.1.2)
+    - TFoundation/UserDefault (= 0.1.2)
+  - TFoundation/ArchiveData (0.1.2):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Audio (0.1.1):
-    - TFoundation/Internal
-  - TFoundation/Cache (0.1.1):
+  - TFoundation/Cache (0.1.2):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.1):
+  - TFoundation/Category (0.1.2):
     - GTMBase64
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.1):
+  - TFoundation/DataSafe (0.1.2):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Device (0.1.1):
+  - TFoundation/Dealloc (0.1.2):
+    - TFoundation/Category
+  - TFoundation/Device (0.1.2):
     - TFoundation/Internal
-  - TFoundation/FileManager (0.1.1):
+  - TFoundation/FileManager (0.1.2):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.1):
+  - TFoundation/Hard (0.1.2):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.1)
-  - TFoundation/Keychain (0.1.1):
+  - TFoundation/Internal (0.1.2)
+  - TFoundation/Keychain (0.1.2):
     - TFoundation/Internal
-  - TFoundation/NetWork (0.1.1):
+  - TFoundation/Media (0.1.2):
+    - TFoundation/Internal
+  - TFoundation/NetWork (0.1.2):
     - AFNetworking
     - TFoundation/Internal
-  - TFoundation/Preferences (0.1.1):
+  - TFoundation/Preferences (0.1.2):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.1):
+  - TFoundation/UserDefault (0.1.2):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -103,7 +106,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: 4a299b6394c2a76da20352aa493e95503912ca25
+  TFoundation: 711736bca6dc32b429b24285715b68bdc16aec45
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 

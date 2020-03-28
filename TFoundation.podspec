@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
@@ -93,12 +93,19 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/Device/**/*'
   end
   
-  s.subspec 'Audio' do |ss|
+  s.subspec 'Media' do |ss|
 	  ss.dependency 'TFoundation/Internal'
-	  ss.public_header_files = 'TFoundation/Audio/*.h'
-	  ss.source_files = 'TFoundation/Audio/**/*'
+	  ss.public_header_files = 'TFoundation/Media/*.h'
+	  ss.source_files = 'TFoundation/Media/**/*'
 	  ss.frameworks = 'AudioToolBox'
   end
+  
+  s.subspec 'Dealloc' do |ss|
+	  ss.dependency 'TFoundation/Category'
+	  ss.public_header_files = 'TFoundation/Dealloc/*.h'
+	  ss.source_files = 'TFoundation/Dealloc/**/*'
+  end
+  
   
   s.frameworks = "Foundation", "MobileCoreServices", "CoreServices"
   s.xcconfig = {"OHTER_LINKER_FLAGS" => "-OjbC"}
