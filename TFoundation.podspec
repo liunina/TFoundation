@@ -99,6 +99,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Device' do |ss|
 	  ss.dependency 'TFoundation/Internal'
+	  ss.dependency 'TFoundation/Keychain'
 	  ss.public_header_files = 'TFoundation/Device/*.h'
 	  ss.source_files = 'TFoundation/Device/**/*'
   end
