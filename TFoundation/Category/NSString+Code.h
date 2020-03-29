@@ -35,6 +35,20 @@ NS_ASSUME_NONNULL_BEGIN
 ///	"#fff303"色值转16进制
 - (unsigned long)sixteenBinarySystem;
 
+/// 功能:将dictionary转成字符串
+/// @param aDict aDict description
++ (NSString *)stringFromDict:(NSDictionary *)aDict;
+
+/// NSDictionary转字符串（格式化成较美观的json，含换行符等）
+/// @param aDict aDict
++ (NSString *)prettyStringFromDict:(NSDictionary *)aDict;
+
+/// json对象转字符串
+/// @param aObj aDict
+/// @param option option description
++ (NSString *)stringFromJSONObject:(id)aObj options:(NSJSONWritingOptions)option;
+
+
 @end
 
 #pragma mark - CSSHtml

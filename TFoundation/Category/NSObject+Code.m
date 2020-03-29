@@ -487,6 +487,43 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
++ (NSDictionary *)dictFromString:(NSString *)aString {
+    if (aString == nil) {
+        return nil;
+    }
+    
+    NSData *theData = [aString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    NSError *error = nil;
+    
+    NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:&error];
+    
+    if (error) {
+        TFLogError(@"error convert json string to dict,%@,%@", aString, error);
+        return nil;
+    }
+    else {
+        return resultDict;
+    }
+}
+
++ (NSArray *)arrayFromString:(NSString *)aString {
+    if (aString == nil) {
+        return nil;
+    }
+    
+    NSData *theData = [aString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    NSError *error = nil;
+    
+    NSArray *resultArray = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:&error];
+    
+    if (error) {
+        TFLogError(@"error convert json string to array,%@,%@", aString, error);
+        return nil;
+    } else {
+        return resultArray;
+    }
+}
+
 @end
 
 @implementation NSObject (Category)

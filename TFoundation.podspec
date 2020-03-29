@@ -75,6 +75,16 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/FileManager/**/*'
   end
   
+  s.subspec 'Predicate' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Predicate/*.h'
+	  ss.source_files = 'TFoundation/Predicate/**/*'
+  end
+  s.subspec 'Timer' do |ss|
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Timer/*.h'
+	  ss.source_files = 'TFoundation/Timer/**/*'
+  end
   s.subspec 'UserDefault' do |ss|
 	  ss.dependency 'TFoundation/Internal'
 	  ss.public_header_files = 'TFoundation/UserDefault/*.h'

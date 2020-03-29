@@ -49,10 +49,10 @@ NSString *const T_KeyChainUserToken = @"t.keychain.passport.token";
 - (void)setup {
 	NSString *identity = [TFoundation keyChainIdentity];
 	NSString *group = [TFoundation keychainGroup];
-	if (!identity || !group ) {
-		TFLogError(@"keyChainIdentity and keychainGroup must be true");
+	if (!identity ) {
+		TFLogError(@"keyChainIdentity must be true");
 	}
-	NSAssert(identity && group, @"keyChainIdentity and keychainGroup must be true");
+	NSAssert(identity, @"keyChainIdentity must be true");
 	
     TKeychainItemWrapper *wrapper = [[TKeychainItemWrapper alloc] initWithIdentifier:identity accessGroup:group];
 	self.otsItem = wrapper;

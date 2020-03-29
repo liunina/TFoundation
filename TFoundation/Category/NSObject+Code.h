@@ -50,6 +50,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 将vo对象转为json格式的字符串对象中的属性类型只能是：NSString NSNumber NSArray NSDictionary NSNull 或者是本地VO实体对象
 - (NSString *)toJsonStr;
 
+/// 功能:将字符串转成dictionary
+/// @param aString aString description
++ (NSDictionary *)dictFromString:(NSString *)aString;
+
+/// 功能:将字符串转成array
+/// @param aString aString description
++ (NSArray *)arrayFromString:(NSString *)aString;
+
 @end
 
 #pragma mark - Category

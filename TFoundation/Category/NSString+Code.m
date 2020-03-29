@@ -10,6 +10,7 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import <GTMBase64/GTMBase64.h>
 #import "NSArray+safe.h"
+#import "TFoundationLogging.h"
 
 @implementation NSString(MD5)
 
@@ -119,6 +120,35 @@
     [colorStr appendString:valueStr];
     return strtoul([colorStr UTF8String],0,16);
 }
+
+
++ (NSString *)stringFromDict:(NSDictionary *)aDict {
+    return [self stringFromDict:aDict options:0];
+}
+
++ (NSString *)prettyStringFromDict:(NSDictionary *)aDict {
+    return [self stringFromDict:aDict options:NSJSONWritingPrettyPrinted];
+}
+
++ (NSString *)stringFromDict:(NSDictionary *)aDict options:(NSJSONWritingOptions)option {
+    return [self stringFromJSONObject:aDict options:option];
+}
+
++ (NSString *)stringFromJSONObject:(id)aObj options:(NSJSONWritingOptions)option {
+    NSString *json = nil;
+    if ([NSJSONSerialization isValidJSONObject:aObj]) {
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:aObj options:option error:&error];
+        if (!error) {
+            json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        } else {
+            TFLogError(@"error convert to json,%@,%@",error,aObj);
+        }
+    }
+    
+    return json;
+}
+
 @end
 
 @implementation NSString (CSSHtml)

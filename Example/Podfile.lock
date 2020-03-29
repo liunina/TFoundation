@@ -40,7 +40,9 @@ PODS:
     - TFoundation/Keychain (= 0.1.2)
     - TFoundation/Media (= 0.1.2)
     - TFoundation/NetWork (= 0.1.2)
+    - TFoundation/Predicate (= 0.1.2)
     - TFoundation/Preferences (= 0.1.2)
+    - TFoundation/Timer (= 0.1.2)
     - TFoundation/UserDefault (= 0.1.2)
   - TFoundation/ArchiveData (0.1.2):
     - TFoundation/FileManager
@@ -71,8 +73,12 @@ PODS:
   - TFoundation/NetWork (0.1.2):
     - AFNetworking
     - TFoundation/Internal
+  - TFoundation/Predicate (0.1.2):
+    - TFoundation/Internal
   - TFoundation/Preferences (0.1.2):
     - TFoundation/Cache
+    - TFoundation/Internal
+  - TFoundation/Timer (0.1.2):
     - TFoundation/Internal
   - TFoundation/UserDefault (0.1.2):
     - TFoundation/Internal
@@ -106,8 +112,8 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: 711736bca6dc32b429b24285715b68bdc16aec45
+  TFoundation: bc80057fc9b15e6458a267515cb15c96b4e527b9
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

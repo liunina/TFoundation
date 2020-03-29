@@ -13,7 +13,6 @@ UIKIT_EXTERN NSString * _Nonnull const T_KEYCHAIN_DEVICECODE;
 UIKIT_EXTERN NSString * _Nonnull const T_KeyChainUserToken;
 UIKIT_EXTERN NSString * _Nonnull const T_KeyChainSignatureKey;
 UIKIT_EXTERN NSString * _Nonnull const T_KEYCHAIN_DEVICETOKEN;//设备推送token
-UIKIT_EXTERN NSString * _Nonnull const T_KEYCHAIN_DEVICETOKEN;//设备推送token
 
 #define T_KEYCHAIN_DICT_ENCODE_KEY_VALUE @"T_KEYCHAIN_DICT_ENCODE_KEY_VALUE"
 
