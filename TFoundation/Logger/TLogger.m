@@ -10,12 +10,6 @@
 #import "TLoggerFileFormatter.h"
 #import "TLoggerFields.h"
 
-#ifdef DEBUG
-       int const ddLogLevel = DDLogLevelVerbose;
-#else
-       int const ddLogLevel = DDLogLevelOff;
-#endif
-
 static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
 @interface TLogger ()
 @property (nonatomic, copy) TLogUploadFileBlock uploadBlock;
@@ -180,26 +174,6 @@ static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
             [self uploadLogFileWithBlock:uploadBlock];
         }
     }
-}
-
-- (void)logEror:(NSString *)message {
-    DDLogError(@"%@", message);
-}
-
-- (void)logWarn:(NSString *)message {
-    DDLogWarn(@"%@", message);
-}
-
-- (void)logInfo:(NSString *)message {
-    DDLogInfo(@"%@", message);
-}
-
-- (void)logDebug:(NSString *)message {
-    DDLogDebug(@"%@", message);
-}
-
-- (void)logVerbose:(NSString *)message {
-    DDLogVerbose(@"%@", message);
 }
 
 #pragma mark - getter & setter
