@@ -20,6 +20,7 @@ static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
 @implementation TLogger
 @synthesize logFormatter = _logFormatter;
 @synthesize fileLogFormatter = _fileLogFormatter;
+
 - (instancetype)init {
 	self = [super init];
 	if (self) {
@@ -38,14 +39,6 @@ static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
 		sharedInstance = [[self alloc] init];
 	});
 	return sharedInstance;
-}
-
-+ (id)allocWithZone:(struct _NSZone *)zone {
-    return [TLogger sharedInstance];
-}
-
-- (id)copyWithZone:(struct _NSZone *)zone {
-    return [TLogger sharedInstance];
 }
 
 - (void)setLogFileEnabled:(BOOL)LogFileEnabled {
