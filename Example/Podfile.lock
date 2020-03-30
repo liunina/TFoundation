@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
   - DFCache (4.0.2)
   - Expecta (1.0.6)
   - "Expecta+Snapshots (3.1.1)":
@@ -27,62 +30,66 @@ PODS:
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
   - Specta (1.0.7)
-  - TFoundation (0.1.3):
-    - TFoundation/ArchiveData (= 0.1.3)
-    - TFoundation/Cache (= 0.1.3)
-    - TFoundation/Category (= 0.1.3)
-    - TFoundation/DataSafe (= 0.1.3)
-    - TFoundation/Dealloc (= 0.1.3)
-    - TFoundation/Device (= 0.1.3)
-    - TFoundation/FileManager (= 0.1.3)
-    - TFoundation/Hard (= 0.1.3)
-    - TFoundation/Internal (= 0.1.3)
-    - TFoundation/Keychain (= 0.1.3)
-    - TFoundation/Media (= 0.1.3)
-    - TFoundation/NetWork (= 0.1.3)
-    - TFoundation/Predicate (= 0.1.3)
-    - TFoundation/Preferences (= 0.1.3)
-    - TFoundation/Timer (= 0.1.3)
-    - TFoundation/UserDefault (= 0.1.3)
-  - TFoundation/ArchiveData (0.1.3):
+  - TFoundation (0.1.4):
+    - TFoundation/ArchiveData (= 0.1.4)
+    - TFoundation/Cache (= 0.1.4)
+    - TFoundation/Category (= 0.1.4)
+    - TFoundation/DataSafe (= 0.1.4)
+    - TFoundation/Dealloc (= 0.1.4)
+    - TFoundation/Device (= 0.1.4)
+    - TFoundation/FileManager (= 0.1.4)
+    - TFoundation/Hard (= 0.1.4)
+    - TFoundation/Internal (= 0.1.4)
+    - TFoundation/Keychain (= 0.1.4)
+    - TFoundation/Logger (= 0.1.4)
+    - TFoundation/Media (= 0.1.4)
+    - TFoundation/NetWork (= 0.1.4)
+    - TFoundation/Predicate (= 0.1.4)
+    - TFoundation/Preferences (= 0.1.4)
+    - TFoundation/Timer (= 0.1.4)
+    - TFoundation/UserDefault (= 0.1.4)
+  - TFoundation/ArchiveData (0.1.4):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Cache (0.1.3):
+  - TFoundation/Cache (0.1.4):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.3):
+  - TFoundation/Category (0.1.4):
     - GTMBase64
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.3):
+  - TFoundation/DataSafe (0.1.4):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Dealloc (0.1.3):
+  - TFoundation/Dealloc (0.1.4):
     - TFoundation/Category
-  - TFoundation/Device (0.1.3):
+  - TFoundation/Device (0.1.4):
     - TFoundation/Category
     - TFoundation/Internal
     - TFoundation/Keychain
-  - TFoundation/FileManager (0.1.3):
+  - TFoundation/FileManager (0.1.4):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.3):
+  - TFoundation/Hard (0.1.4):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.3)
-  - TFoundation/Keychain (0.1.3):
+  - TFoundation/Internal (0.1.4)
+  - TFoundation/Keychain (0.1.4):
     - TFoundation/Internal
-  - TFoundation/Media (0.1.3):
+  - TFoundation/Logger (0.1.4):
+    - CocoaLumberjack
     - TFoundation/Internal
-  - TFoundation/NetWork (0.1.3):
+  - TFoundation/Media (0.1.4):
+    - TFoundation/Internal
+  - TFoundation/NetWork (0.1.4):
     - AFNetworking
     - TFoundation/Internal
-  - TFoundation/Predicate (0.1.3):
+  - TFoundation/Predicate (0.1.4):
     - TFoundation/Internal
-  - TFoundation/Preferences (0.1.3):
+  - TFoundation/Preferences (0.1.4):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/Timer (0.1.3):
+  - TFoundation/Timer (0.1.4):
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.3):
+  - TFoundation/UserDefault (0.1.4):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -95,6 +102,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - CocoaLumberjack
     - DFCache
     - Expecta
     - "Expecta+Snapshots"
@@ -108,13 +116,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   DFCache: 29f9c20605ae91a951c161326e41a016128d6259
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: 1e3d6eaa4a3ae5abd455fe190ff7ad9a03b64381
+  TFoundation: 0e6d91c8860f4011e472898e798e8632947410e7
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 

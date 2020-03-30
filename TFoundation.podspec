@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
@@ -21,6 +21,12 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/Internal/**/*'
   end
   
+  s.subspec 'Logger' do |ss|
+	  ss.dependency 'CocoaLumberjack'
+	  ss.dependency 'TFoundation/Internal'
+	  ss.public_header_files = 'TFoundation/Logger/*.h'
+	  ss.source_files = 'TFoundation/Logger/**/*'
+  end
   s.subspec 'Cache' do |ss|
 	  ss.dependency 'DFCache'
 	  ss.dependency 'TFoundation/Internal'
