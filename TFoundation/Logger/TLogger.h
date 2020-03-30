@@ -11,12 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 ///	ddLogLevel可依照需要设置为:DDLogLevelError / DDLogLevelWarning / DDLogLevelInfo / DDLogLevelDebug / DDLogLevelOff
-static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+
+//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+extern int const ddLogLevel;
 
 #define TLogError(...) DDLogError(@"%@",[NSString stringWithFormat:__VA_ARGS__]);
 #define TLogWarn(...) DDLogWarn(@"%@",[NSString stringWithFormat:__VA_ARGS__]);
 #define TLogInfo(...) DDLogInfo(@"%@",[NSString stringWithFormat:__VA_ARGS__]);
 #define TLogDebug(...) DDLogDebug(@"%@",[NSString stringWithFormat:__VA_ARGS__]);
+#define TLogVerbose(...) DDLogVerbose(@"%@",[NSString stringWithFormat:__VA_ARGS__]);
 
 typedef void(^TLogUploadFileBlock)(NSString *logFilePath);
 
@@ -87,6 +91,10 @@ typedef enum : NSUInteger {
 /// log 调试信息
 /// @param message message description
 - (void)logDebug:(NSString *)message;
+
+/// log 调试信息
+/// @param message message description
+- (void)logVerbose:(NSString *)message;
 @end
 
 NS_ASSUME_NONNULL_END

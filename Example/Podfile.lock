@@ -15,62 +15,62 @@ PODS:
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
   - Specta (1.0.7)
-  - TFoundation (0.1.7):
-    - TFoundation/ArchiveData (= 0.1.7)
-    - TFoundation/Cache (= 0.1.7)
-    - TFoundation/Category (= 0.1.7)
-    - TFoundation/DataSafe (= 0.1.7)
-    - TFoundation/Dealloc (= 0.1.7)
-    - TFoundation/Device (= 0.1.7)
-    - TFoundation/FileManager (= 0.1.7)
-    - TFoundation/Hard (= 0.1.7)
-    - TFoundation/Internal (= 0.1.7)
-    - TFoundation/Keychain (= 0.1.7)
-    - TFoundation/Logger (= 0.1.7)
-    - TFoundation/Media (= 0.1.7)
-    - TFoundation/Predicate (= 0.1.7)
-    - TFoundation/Preferences (= 0.1.7)
-    - TFoundation/Timer (= 0.1.7)
-    - TFoundation/UserDefault (= 0.1.7)
-  - TFoundation/ArchiveData (0.1.7):
+  - TFoundation (0.1.8):
+    - TFoundation/ArchiveData (= 0.1.8)
+    - TFoundation/Cache (= 0.1.8)
+    - TFoundation/Category (= 0.1.8)
+    - TFoundation/DataSafe (= 0.1.8)
+    - TFoundation/Dealloc (= 0.1.8)
+    - TFoundation/Device (= 0.1.8)
+    - TFoundation/FileManager (= 0.1.8)
+    - TFoundation/Hard (= 0.1.8)
+    - TFoundation/Internal (= 0.1.8)
+    - TFoundation/Keychain (= 0.1.8)
+    - TFoundation/Logger (= 0.1.8)
+    - TFoundation/Media (= 0.1.8)
+    - TFoundation/Predicate (= 0.1.8)
+    - TFoundation/Preferences (= 0.1.8)
+    - TFoundation/Timer (= 0.1.8)
+    - TFoundation/UserDefault (= 0.1.8)
+  - TFoundation/ArchiveData (0.1.8):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Cache (0.1.7):
+  - TFoundation/Cache (0.1.8):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.7):
+  - TFoundation/Category (0.1.8):
     - GTMBase64
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.7):
+  - TFoundation/DataSafe (0.1.8):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Dealloc (0.1.7):
+  - TFoundation/Dealloc (0.1.8):
     - TFoundation/Category
-  - TFoundation/Device (0.1.7):
+  - TFoundation/Device (0.1.8):
     - TFoundation/Category
     - TFoundation/Internal
     - TFoundation/Keychain
-  - TFoundation/FileManager (0.1.7):
+  - TFoundation/FileManager (0.1.8):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.7):
+  - TFoundation/Hard (0.1.8):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.7)
-  - TFoundation/Keychain (0.1.7):
+  - TFoundation/Internal (0.1.8)
+  - TFoundation/Keychain (0.1.8):
     - TFoundation/Internal
-  - TFoundation/Logger (0.1.7):
+  - TFoundation/Logger (0.1.8):
     - CocoaLumberjack
     - TFoundation/Internal
-  - TFoundation/Media (0.1.7):
+  - TFoundation/Media (0.1.8):
     - TFoundation/Internal
-  - TFoundation/Predicate (0.1.7):
+  - TFoundation/Predicate (0.1.8):
     - TFoundation/Internal
-  - TFoundation/Preferences (0.1.7):
+  - TFoundation/Preferences (0.1.8):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/Timer (0.1.7):
+  - TFoundation/Timer (0.1.8):
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.7):
+  - TFoundation/UserDefault (0.1.8):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -102,7 +102,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: bf8fd7ae4cb14cd8d365db8af3e47d5820a42cdf
+  TFoundation: e76168764919e965724eb707284bb73045c73947
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 
