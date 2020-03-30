@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC

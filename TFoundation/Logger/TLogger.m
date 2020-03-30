@@ -7,6 +7,8 @@
 
 #import "TLogger.h"
 #import "TLoggerFormatter.h"
+#import "TLoggerFileFormatter.h"
+#import "TLoggerFields.h"
 
 static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
 @interface TLogger ()
@@ -189,6 +191,7 @@ static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
     DDLogDebug(@"%@", message);
 }
 
+#pragma mark - getter & setter
 - (void)setLogFormatter:(id<DDLogFormatter>)logFormatter {
 	_logFormatter = logFormatter;
 	[DDTTYLogger sharedInstance].logFormatter = self.logFormatter;
@@ -208,7 +211,8 @@ static NSString *keyTLogLastUploadTimeInterval = @"TLogLastUploadTimeInterval";
 
 - (id<DDLogFormatter>)fileLogFormatter {
 	if (!_fileLogFormatter) {
-		_fileLogFormatter = [[TLoggerFileFormatter alloc] init];
+		TLoggerFields *loggerFields = [[TLoggerFields alloc] init];
+		_fileLogFormatter = [[TLoggerFileFormatter alloc] initWithLoggerFieldsDelegate:loggerFields];
 	}
 	return _fileLogFormatter;
 }
