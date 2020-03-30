@@ -27,7 +27,7 @@
 }
 
 - (void)unobserveAllNotifications {
-#warning 这是一个不安全的方法，通知应该都用blocks－kvo替代
+//#warning 这是一个不安全的方法，通知应该都用blocks－kvo替代
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

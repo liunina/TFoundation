@@ -25,7 +25,7 @@
     NSUInteger logLine = logMessage -> _line;        // 行号
     NSString *logMsg = logMessage->_message;         // 日志消息
     
-    // 日志格式：日期和时间 文件名 方法名 : 行数 <日志等级> 日志消息
+    // 日志格式：日志等级 文件名 方法名 (line:行数) 日志消息
     return [NSString stringWithFormat:@"%@ %@ %@(line:%lu)\n%@\n",logLevel, logFileName, logFunction, logLine, logMsg];
 }
 @end

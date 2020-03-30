@@ -1,19 +1,4 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
   - CocoaLumberjack (3.6.1):
     - CocoaLumberjack/Core (= 3.6.1)
   - CocoaLumberjack/Core (3.6.1)
@@ -30,66 +15,62 @@ PODS:
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
   - Specta (1.0.7)
-  - TFoundation (0.1.4):
-    - TFoundation/ArchiveData (= 0.1.4)
-    - TFoundation/Cache (= 0.1.4)
-    - TFoundation/Category (= 0.1.4)
-    - TFoundation/DataSafe (= 0.1.4)
-    - TFoundation/Dealloc (= 0.1.4)
-    - TFoundation/Device (= 0.1.4)
-    - TFoundation/FileManager (= 0.1.4)
-    - TFoundation/Hard (= 0.1.4)
-    - TFoundation/Internal (= 0.1.4)
-    - TFoundation/Keychain (= 0.1.4)
-    - TFoundation/Logger (= 0.1.4)
-    - TFoundation/Media (= 0.1.4)
-    - TFoundation/NetWork (= 0.1.4)
-    - TFoundation/Predicate (= 0.1.4)
-    - TFoundation/Preferences (= 0.1.4)
-    - TFoundation/Timer (= 0.1.4)
-    - TFoundation/UserDefault (= 0.1.4)
-  - TFoundation/ArchiveData (0.1.4):
+  - TFoundation (0.1.5):
+    - TFoundation/ArchiveData (= 0.1.5)
+    - TFoundation/Cache (= 0.1.5)
+    - TFoundation/Category (= 0.1.5)
+    - TFoundation/DataSafe (= 0.1.5)
+    - TFoundation/Dealloc (= 0.1.5)
+    - TFoundation/Device (= 0.1.5)
+    - TFoundation/FileManager (= 0.1.5)
+    - TFoundation/Hard (= 0.1.5)
+    - TFoundation/Internal (= 0.1.5)
+    - TFoundation/Keychain (= 0.1.5)
+    - TFoundation/Logger (= 0.1.5)
+    - TFoundation/Media (= 0.1.5)
+    - TFoundation/Predicate (= 0.1.5)
+    - TFoundation/Preferences (= 0.1.5)
+    - TFoundation/Timer (= 0.1.5)
+    - TFoundation/UserDefault (= 0.1.5)
+  - TFoundation/ArchiveData (0.1.5):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Cache (0.1.4):
+  - TFoundation/Cache (0.1.5):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.4):
+  - TFoundation/Category (0.1.5):
     - GTMBase64
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.4):
+  - TFoundation/DataSafe (0.1.5):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Dealloc (0.1.4):
+  - TFoundation/Dealloc (0.1.5):
     - TFoundation/Category
-  - TFoundation/Device (0.1.4):
+  - TFoundation/Device (0.1.5):
     - TFoundation/Category
     - TFoundation/Internal
     - TFoundation/Keychain
-  - TFoundation/FileManager (0.1.4):
+  - TFoundation/FileManager (0.1.5):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.4):
+  - TFoundation/Hard (0.1.5):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.4)
-  - TFoundation/Keychain (0.1.4):
+  - TFoundation/Internal (0.1.5)
+  - TFoundation/Keychain (0.1.5):
     - TFoundation/Internal
-  - TFoundation/Logger (0.1.4):
+  - TFoundation/Logger (0.1.5):
     - CocoaLumberjack
     - TFoundation/Internal
-  - TFoundation/Media (0.1.4):
+  - TFoundation/Media (0.1.5):
     - TFoundation/Internal
-  - TFoundation/NetWork (0.1.4):
-    - AFNetworking
+  - TFoundation/Predicate (0.1.5):
     - TFoundation/Internal
-  - TFoundation/Predicate (0.1.4):
-    - TFoundation/Internal
-  - TFoundation/Preferences (0.1.4):
+  - TFoundation/Preferences (0.1.5):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/Timer (0.1.4):
+  - TFoundation/Timer (0.1.5):
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.4):
+  - TFoundation/UserDefault (0.1.5):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -101,7 +82,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AFNetworking
     - CocoaLumberjack
     - DFCache
     - Expecta
@@ -115,7 +95,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   DFCache: 29f9c20605ae91a951c161326e41a016128d6259
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
@@ -123,7 +102,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: 0e6d91c8860f4011e472898e798e8632947410e7
+  TFoundation: 3ec5e6ea3aedfd4e5888309b6400af7c0829f384
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 

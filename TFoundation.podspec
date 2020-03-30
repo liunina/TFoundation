@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
@@ -41,12 +41,12 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/Preferences/**/*'
   end
   
-  s.subspec 'NetWork' do |ss|
-	  ss.dependency 'TFoundation/Internal'
-	  ss.dependency 'AFNetworking'
-	  ss.public_header_files = 'TFoundation/NetWork/*.h'
-	  ss.source_files = 'TFoundation/NetWork/**/*'
-  end
+#  s.subspec 'NetWork' do |ss|
+#	  ss.dependency 'TFoundation/Internal'
+#	  ss.dependency 'AFNetworking'
+#	  ss.public_header_files = 'TFoundation/NetWork/*.h'
+#	  ss.source_files = 'TFoundation/NetWork/**/*'
+#  end
   
   s.subspec 'Category' do |ss|
 	   ss.dependency 'GTMBase64'
