@@ -2,7 +2,7 @@
 # 发布
 
 project='TFoundation'
-spec='NLSpecs'
+#spec='NLSpecs'
 
 echo -n "输入该私有库版本号(tag):"
 read version
