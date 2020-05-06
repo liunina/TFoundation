@@ -391,7 +391,14 @@
             [dictionary setValue:dateNum forKey:propertyName];
             continue;
         }
-		[dictionary setValue:value forKey:propertyName];
+		//转json的基本类型直接添加
+		if ([propertyName isEqualToString:@"nid"]) {
+		  [dictionary setValue:value forKey:@"id"];
+		}else if ([propertyName isEqualToString:@"modifiedPassword"]) {
+			[dictionary setValue:value forKey:@"newPassword"];
+		}else {
+			[dictionary setValue:value forKey:propertyName];
+		}
     }
 
 #ifdef ENABLE_ASSOCIATED_PROPERTY_JSON
@@ -453,8 +460,7 @@
         }
         else if ([propertyName isEqualToString:@"modifiedPassword"]) {
             [dictionary setValue:value forKey:@"newPassword"];
-        }
-        else {
+        }else {
             [dictionary setValue:value forKey:propertyName];
         }
     }

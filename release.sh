@@ -19,7 +19,7 @@ echo "==================🚀======================="
 read -n2 -p "是否发布?[Y/N]?" answer
 case $answer in
 (Y | y)
-	fastlane release_pod project:$project version:$version repo:$spec desc:$desc
+	bundle exec fastlane release_pod project:$project version:$version repo:$spec desc:$desc
 	echo "===Finished===🎆======================"
 (N | n)
 	echo "ok, good bye";;
