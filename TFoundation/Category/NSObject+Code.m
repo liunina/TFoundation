@@ -13,11 +13,11 @@
 #import "NSDictionary+safe.h"
 #import "NSMutableDictionary+safe.h"
 #import "TFoundationLogging.h"
+#import <JSONModel/JSONModel.h>
 
 @interface NSObject () <NSCoding>
 @end
 
-//@class JSONModel;
 @implementation NSObject (Runtime)
 
 /// 获取对象的所有属性,包括父类的。可以一直遍历到JSONModel层。如果不是继承JSONMOdel,最上层为NSObject
@@ -25,7 +25,7 @@
     NSMutableArray *props = [NSMutableArray array];
     unsigned int outCount, i;
 	Class targetClass = [self class];
-//	while (targetClass != [JSONModel class] && targetClass != [NSObject class]) {
+	while (targetClass != [JSONModel class] && targetClass != [NSObject class]) {
 		objc_property_t *properties = class_copyPropertyList(targetClass, &outCount);
 		for (i = 0; i < outCount; i++) {
 			objc_property_t property = properties[i];
@@ -34,8 +34,8 @@
 			[props addObject:propertyName];
 		}
 		free(properties);
-//		targetClass = [targetClass superclass];
-//	}
+		targetClass = [targetClass superclass];
+	}
 	return props;
 }
 
@@ -104,7 +104,8 @@
  *  获取参数class类的所有属性
  */
 - (NSMutableArray *)getPropertyList:(Class)class {
-	if ([ NSStringFromClass(class) isEqualToString:NSStringFromClass([NSObject class])]) {
+	if ([NSStringFromClass(class) isEqualToString:NSStringFromClass([NSObject class])]
+		|| [NSStringFromClass(class) isEqualToString:NSStringFromClass([JSONModel class])]) {
 		return nil;
     }
     u_int count;

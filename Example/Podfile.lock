@@ -14,63 +14,65 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
+  - JSONModel (1.8.0)
   - Specta (1.0.7)
-  - TFoundation (0.1.10):
-    - TFoundation/ArchiveData (= 0.1.10)
-    - TFoundation/Cache (= 0.1.10)
-    - TFoundation/Category (= 0.1.10)
-    - TFoundation/DataSafe (= 0.1.10)
-    - TFoundation/Dealloc (= 0.1.10)
-    - TFoundation/Device (= 0.1.10)
-    - TFoundation/FileManager (= 0.1.10)
-    - TFoundation/Hard (= 0.1.10)
-    - TFoundation/Internal (= 0.1.10)
-    - TFoundation/Keychain (= 0.1.10)
-    - TFoundation/Logger (= 0.1.10)
-    - TFoundation/Media (= 0.1.10)
-    - TFoundation/Predicate (= 0.1.10)
-    - TFoundation/Preferences (= 0.1.10)
-    - TFoundation/Timer (= 0.1.10)
-    - TFoundation/UserDefault (= 0.1.10)
-  - TFoundation/ArchiveData (0.1.10):
+  - TFoundation (0.1.11):
+    - TFoundation/ArchiveData (= 0.1.11)
+    - TFoundation/Cache (= 0.1.11)
+    - TFoundation/Category (= 0.1.11)
+    - TFoundation/DataSafe (= 0.1.11)
+    - TFoundation/Dealloc (= 0.1.11)
+    - TFoundation/Device (= 0.1.11)
+    - TFoundation/FileManager (= 0.1.11)
+    - TFoundation/Hard (= 0.1.11)
+    - TFoundation/Internal (= 0.1.11)
+    - TFoundation/Keychain (= 0.1.11)
+    - TFoundation/Logger (= 0.1.11)
+    - TFoundation/Media (= 0.1.11)
+    - TFoundation/Predicate (= 0.1.11)
+    - TFoundation/Preferences (= 0.1.11)
+    - TFoundation/Timer (= 0.1.11)
+    - TFoundation/UserDefault (= 0.1.11)
+  - TFoundation/ArchiveData (0.1.11):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Cache (0.1.10):
+  - TFoundation/Cache (0.1.11):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.10):
+  - TFoundation/Category (0.1.11):
     - GTMBase64
+    - JSONModel
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.10):
+  - TFoundation/DataSafe (0.1.11):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Dealloc (0.1.10):
+  - TFoundation/Dealloc (0.1.11):
     - TFoundation/Category
-  - TFoundation/Device (0.1.10):
+  - TFoundation/Device (0.1.11):
     - TFoundation/Category
     - TFoundation/Internal
     - TFoundation/Keychain
-  - TFoundation/FileManager (0.1.10):
+  - TFoundation/FileManager (0.1.11):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.10):
+  - TFoundation/Hard (0.1.11):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.10)
-  - TFoundation/Keychain (0.1.10):
+  - TFoundation/Internal (0.1.11)
+  - TFoundation/Keychain (0.1.11):
     - TFoundation/Internal
-  - TFoundation/Logger (0.1.10):
+  - TFoundation/Logger (0.1.11):
     - CocoaLumberjack
     - TFoundation/Internal
-  - TFoundation/Media (0.1.10):
+  - TFoundation/Media (0.1.11):
     - TFoundation/Internal
-  - TFoundation/Predicate (0.1.10):
+  - TFoundation/Predicate (0.1.11):
     - TFoundation/Internal
-  - TFoundation/Preferences (0.1.10):
+  - TFoundation/Preferences (0.1.11):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/Timer (0.1.10):
+  - TFoundation/Timer (0.1.11):
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.10):
+  - TFoundation/UserDefault (0.1.11):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -88,6 +90,7 @@ SPEC REPOS:
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
     - GTMBase64
+    - JSONModel
     - Specta
 
 EXTERNAL SOURCES:
@@ -101,9 +104,10 @@ SPEC CHECKSUMS:
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: ac51fb58f43a02fdef663b4e310ce6c3cc9df8b9
+  TFoundation: 5e7b5c254a997c1cd28ba18a42245d2fe3d9b291
 
 PODFILE CHECKSUM: 5b9788ab677ba0275861825a43263dada317b77f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

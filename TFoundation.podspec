@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.10'
+  s.version          = '0.1.11'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
@@ -50,6 +50,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Category' do |ss|
 	   ss.dependency 'GTMBase64'
+	   ss.dependency 'JSONModel'
 	   ss.dependency 'TFoundation/Internal'
 	   ss.dependency 'TFoundation/DataSafe'
 	   ss.public_header_files = 'TFoundation/Category/*.h'
