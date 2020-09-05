@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
 该项目仅供T11项目使用,项目包含APP中使用的底层工具函数
                        DESC
 
-  s.homepage         = 'http://nas.iliunian.com:82/apple/TFoundation'
+  s.homepage         = 'http://nas.iliunian.com:88/T11/TFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LiuNian' => 'i19850511@gmail.com' }
-  s.source           = { :git => 'http://nas.iliunian.com:82/apple/TFoundation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://nas.iliunian.com:88/T11/TFoundation.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
   
