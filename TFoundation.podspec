@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TFoundation'
-  s.version          = '0.1.13'
+  s.version          = '0.1.14'
   s.summary          = '工具库.包含所有工具(网络,缓存,偏好设置,类目)组件'
 
   s.description      = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { 'LiuNian' => 'i19850511@gmail.com' }
   s.source           = { :git => 'http://nas.iliunian.com:88/T11/TFoundation.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   
   s.requires_arc = true
   
@@ -125,7 +125,8 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/Dealloc/**/*'
   end
   
-  
+  s.ios.framework  = 'UIKit'
+  s.macos.framework  = 'AppKit'
   s.frameworks = "Foundation", "MobileCoreServices", "CoreServices"
   s.xcconfig = {"OHTER_LINKER_FLAGS" => "-OjbC"}
   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }

@@ -57,8 +57,8 @@ typedef NS_ENUM (NSUInteger, TFoundationLoggingLevel) {
 + (NSString *)keyChainIdentity;
 + (void) setKeyChainIdentity:(NSString *)keyChainIdentity;
 
-+ (NSString *)keychainGroup;
-+ (void) setKeychainGroup:(NSString *)keychainGroup;
++ (nullable NSString *)keychainGroup;
++ (void) setKeychainGroup:(nullable NSString *)keychainGroup;
 
 /// Logging Levels
 + (TFoundationLoggingLevel) loggingLevel;

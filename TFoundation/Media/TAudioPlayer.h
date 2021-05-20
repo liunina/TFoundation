@@ -11,8 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TAudioPlayer : NSObject
 + (void)playSoundWithFileName:(NSString *)aFileName
-				   bundleName:(NSString *)aBundleName
-					   ofType:(NSString *)ext
+				   bundleName:(nullable NSString *)aBundleName
+					   ofType:(nullable NSString *)ext
 					 andAlert:(BOOL)alert;
 @end
 

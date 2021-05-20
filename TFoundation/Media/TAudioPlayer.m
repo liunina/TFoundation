@@ -39,8 +39,14 @@
     // 根据ID播放自定义系统声音
     if (alert) {
         AudioServicesPlayAlertSound(ID);
+//		AudioServicesPlayAlertSoundWithCompletion(ID, ^{
+//			AudioServicesDisposeSystemSoundID(ID);
+//		});
     }else {
-        AudioServicesPlaySystemSound(ID);
+		AudioServicesPlaySystemSound(ID);
+//		AudioServicesPlaySystemSoundWithCompletion(ID, ^{
+//			AudioServicesDisposeSystemSoundID(ID);
+//		});
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "TViewController.h"
+#import <TFoundation/TAudioPlayer.h>
 
 @interface TViewController ()
 
@@ -26,4 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)playSound:(id)sender {
+	[TAudioPlayer playSoundWithFileName:@"refresh_music.m4a"
+							 bundleName:nil
+								 ofType:nil
+							   andAlert:NO];
+}
 @end

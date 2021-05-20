@@ -32,7 +32,9 @@ static NSString *kTFoundationKeychainGroup = nil;
 }
 
 + (void) setKeychainGroup:(NSString *)keychainGroup {
-    kTFoundationKeychainGroup = keychainGroup;
+	if (keychainGroup) {
+		kTFoundationKeychainGroup = keychainGroup;
+	}
 }
 
 + (TFoundationLoggingLevel)loggingLevel {
