@@ -16,63 +16,63 @@ PODS:
   - GTMBase64 (1.0.1)
   - JSONModel (1.8.0)
   - Specta (1.0.7)
-  - TFoundation (0.1.13):
-    - TFoundation/ArchiveData (= 0.1.13)
-    - TFoundation/Cache (= 0.1.13)
-    - TFoundation/Category (= 0.1.13)
-    - TFoundation/DataSafe (= 0.1.13)
-    - TFoundation/Dealloc (= 0.1.13)
-    - TFoundation/Device (= 0.1.13)
-    - TFoundation/FileManager (= 0.1.13)
-    - TFoundation/Hard (= 0.1.13)
-    - TFoundation/Internal (= 0.1.13)
-    - TFoundation/Keychain (= 0.1.13)
-    - TFoundation/Logger (= 0.1.13)
-    - TFoundation/Media (= 0.1.13)
-    - TFoundation/Predicate (= 0.1.13)
-    - TFoundation/Preferences (= 0.1.13)
-    - TFoundation/Timer (= 0.1.13)
-    - TFoundation/UserDefault (= 0.1.13)
-  - TFoundation/ArchiveData (0.1.13):
+  - TFoundation (0.1.14):
+    - TFoundation/ArchiveData (= 0.1.14)
+    - TFoundation/Cache (= 0.1.14)
+    - TFoundation/Category (= 0.1.14)
+    - TFoundation/DataSafe (= 0.1.14)
+    - TFoundation/Dealloc (= 0.1.14)
+    - TFoundation/Device (= 0.1.14)
+    - TFoundation/FileManager (= 0.1.14)
+    - TFoundation/Hard (= 0.1.14)
+    - TFoundation/Internal (= 0.1.14)
+    - TFoundation/Keychain (= 0.1.14)
+    - TFoundation/Logger (= 0.1.14)
+    - TFoundation/Media (= 0.1.14)
+    - TFoundation/Predicate (= 0.1.14)
+    - TFoundation/Preferences (= 0.1.14)
+    - TFoundation/Timer (= 0.1.14)
+    - TFoundation/UserDefault (= 0.1.14)
+  - TFoundation/ArchiveData (0.1.14):
     - TFoundation/FileManager
     - TFoundation/Internal
-  - TFoundation/Cache (0.1.13):
+  - TFoundation/Cache (0.1.14):
     - DFCache
     - TFoundation/Internal
-  - TFoundation/Category (0.1.13):
+  - TFoundation/Category (0.1.14):
     - GTMBase64
     - JSONModel
     - TFoundation/DataSafe
     - TFoundation/Internal
-  - TFoundation/DataSafe (0.1.13):
+  - TFoundation/DataSafe (0.1.14):
     - TFoundation/Hard
     - TFoundation/Internal
-  - TFoundation/Dealloc (0.1.13):
+  - TFoundation/Dealloc (0.1.14):
     - TFoundation/Category
-  - TFoundation/Device (0.1.13):
+  - TFoundation/Device (0.1.14):
     - TFoundation/Category
     - TFoundation/Internal
     - TFoundation/Keychain
-  - TFoundation/FileManager (0.1.13):
+  - TFoundation/FileManager (0.1.14):
     - TFoundation/Internal
-  - TFoundation/Hard (0.1.13):
+  - TFoundation/Hard (0.1.14):
     - TFoundation/Internal
-  - TFoundation/Internal (0.1.13)
-  - TFoundation/Keychain (0.1.13):
+  - TFoundation/Internal (0.1.14)
+  - TFoundation/Keychain (0.1.14):
     - TFoundation/Internal
-  - TFoundation/Logger (0.1.13):
+  - TFoundation/Logger (0.1.14):
     - CocoaLumberjack
     - TFoundation/Internal
-  - TFoundation/Media (0.1.13):
+  - TFoundation/Media (0.1.14):
     - TFoundation/Internal
-  - TFoundation/Predicate (0.1.13):
+  - TFoundation/Predicate (0.1.14):
     - TFoundation/Internal
-  - TFoundation/Preferences (0.1.13):
+  - TFoundation/Preferences (0.1.14):
     - TFoundation/Cache
     - TFoundation/Internal
-  - TFoundation/Timer (0.1.13):
+  - TFoundation/Timer (0.1.14):
     - TFoundation/Internal
-  - TFoundation/UserDefault (0.1.13):
+  - TFoundation/UserDefault (0.1.14):
     - TFoundation/Internal
 
 DEPENDENCIES:
@@ -106,8 +106,8 @@ SPEC CHECKSUMS:
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TFoundation: aaedd317f6dffcb03d4323639b44ae971fdfedf5
+  TFoundation: 4a4f5bebd005cc076f6a4bb41f0d0b8173a25569
 
 PODFILE CHECKSUM: a142c4abd004d91a7333e2fa60476b06df19e8f2
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
