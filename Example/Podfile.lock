@@ -1,0 +1,113 @@
+PODS:
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
+  - DFCache (4.0.2)
+  - Expecta (1.0.6)
+  - "Expecta+Snapshots (3.1.1)":
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GTMBase64 (1.0.1)
+  - JSONModel (1.8.0)
+  - Specta (1.0.7)
+  - TFoundation (0.2.0):
+    - TFoundation/ArchiveData (= 0.2.0)
+    - TFoundation/Cache (= 0.2.0)
+    - TFoundation/Category (= 0.2.0)
+    - TFoundation/DataSafe (= 0.2.0)
+    - TFoundation/Dealloc (= 0.2.0)
+    - TFoundation/Device (= 0.2.0)
+    - TFoundation/FileManager (= 0.2.0)
+    - TFoundation/Hard (= 0.2.0)
+    - TFoundation/Internal (= 0.2.0)
+    - TFoundation/Keychain (= 0.2.0)
+    - TFoundation/Logger (= 0.2.0)
+    - TFoundation/Media (= 0.2.0)
+    - TFoundation/Predicate (= 0.2.0)
+    - TFoundation/Preferences (= 0.2.0)
+    - TFoundation/Timer (= 0.2.0)
+    - TFoundation/UserDefault (= 0.2.0)
+  - TFoundation/ArchiveData (0.2.0):
+    - TFoundation/FileManager
+    - TFoundation/Internal
+  - TFoundation/Cache (0.2.0):
+    - DFCache
+    - TFoundation/Internal
+  - TFoundation/Category (0.2.0):
+    - GTMBase64
+    - JSONModel
+    - TFoundation/DataSafe
+    - TFoundation/Internal
+  - TFoundation/DataSafe (0.2.0):
+    - TFoundation/Hard
+    - TFoundation/Internal
+  - TFoundation/Dealloc (0.2.0):
+    - TFoundation/Category
+  - TFoundation/Device (0.2.0):
+    - TFoundation/Category
+    - TFoundation/Internal
+    - TFoundation/Keychain
+  - TFoundation/FileManager (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/Hard (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/Internal (0.2.0)
+  - TFoundation/Keychain (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/Logger (0.2.0):
+    - CocoaLumberjack
+    - TFoundation/Internal
+  - TFoundation/Media (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/Predicate (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/Preferences (0.2.0):
+    - TFoundation/Cache
+    - TFoundation/Internal
+  - TFoundation/Timer (0.2.0):
+    - TFoundation/Internal
+  - TFoundation/UserDefault (0.2.0):
+    - TFoundation/Internal
+
+DEPENDENCIES:
+  - Expecta
+  - "Expecta+Snapshots"
+  - FBSnapshotTestCase
+  - Specta
+  - TFoundation (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - DFCache
+    - Expecta
+    - "Expecta+Snapshots"
+    - FBSnapshotTestCase
+    - GTMBase64
+    - JSONModel
+    - Specta
+
+EXTERNAL SOURCES:
+  TFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  DFCache: 29f9c20605ae91a951c161326e41a016128d6259
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  TFoundation: 5aa847f1c1f768886fa17feff4c83182a95fdf6a
+
+PODFILE CHECKSUM: a142c4abd004d91a7333e2fa60476b06df19e8f2
+
+COCOAPODS: 1.11.2

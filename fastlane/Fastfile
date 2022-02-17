@@ -1,5 +1,5 @@
 default_platform(:ios)
-import_from_git(url: 'http://nas.iliunian.com:88/liunian/FastlaneStandardSetup.git',
+import_from_git(url: 'https://github.com/liunina/FastlaneStandardSetup.git',
           path: 'Fastfile')
 platform :ios do
   desc "Description of what the lane does"
