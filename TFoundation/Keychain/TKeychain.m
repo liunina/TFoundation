@@ -7,8 +7,8 @@
 
 #import "TKeychain.h"
 #import "TKeychainItemWrapper.h"
-#import "TFoundationLogging.h"
 #import "TFoundationInternal.h"
+#import "TFoundation+Options.h"
 
 //trader里头的DeviceCodeNotEncrypt
 NSString *const T_KEYCHAIN_DEVICECODE = @"T_KEYCHAIN_DEVICECODE";
@@ -50,7 +50,7 @@ NSString *const T_KeyChainUserToken = @"t.keychain.passport.token";
 	NSString *identity = [TFoundation keyChainIdentity];
 	NSString *group = [TFoundation keychainGroup];
 	if (!identity ) {
-		TFLogError(@"keyChainIdentity must be true");
+//		TFLogError(@"keyChainIdentity must be true");
 	}
 	NSAssert(identity, @"keyChainIdentity must be true");
 	
@@ -72,7 +72,7 @@ NSString *const T_KeyChainUserToken = @"t.keychain.passport.token";
     }];
     
     if (!find && value) {
-        TFLogError(@"error set keychain type [%@], value [%@]",type ,value);
+//        TFLogError(@"error set keychain type [%@], value [%@]",type ,value);
         return ;
     }
     
@@ -147,7 +147,7 @@ NSString *const T_KeyChainUserToken = @"t.keychain.passport.token";
             dict = [unarchiver decodeObjectForKey:T_KEYCHAIN_DICT_ENCODE_KEY_VALUE];
         }
         @catch (NSException *exception) {
-            TFLogError(@"keychain 解析错误");
+//            TFLogError(@"keychain 解析错误");
             [TKeychain reset];
         }
     }

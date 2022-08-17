@@ -12,7 +12,6 @@
 #import "NSMutableArray+safe.h"
 #import "NSDictionary+safe.h"
 #import "NSMutableDictionary+safe.h"
-#import "TFoundationLogging.h"
 #import <JSONModel/JSONModel.h>
 
 @interface NSObject () <NSCoding>
@@ -50,7 +49,7 @@
         const char* name_s = sel_getName(name_f);
         int arguments = method_getNumberOfArguments(temp_f);
         const char* encoding = method_getTypeEncoding(temp_f);
-        TFLogError(@"方法名：%@,参数个数：%d,编码方式：%@",[NSString stringWithUTF8String:name_s], arguments, [NSString stringWithUTF8String:encoding]);
+//        TFLogError(@"方法名：%@,参数个数：%d,编码方式：%@",[NSString stringWithUTF8String:name_s], arguments, [NSString stringWithUTF8String:encoding]);
     }
     
     free(mothList_f);
@@ -488,7 +487,7 @@
          }
     }
     @catch (NSException *exception) {
-        TFLogError(@"to JSON string exception: %@", exception.description);
+//        TFLogError(@"to JSON string exception: %@", exception.description);
         return nil;
     }
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
@@ -505,7 +504,7 @@
     NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:&error];
     
     if (error) {
-        TFLogError(@"error convert json string to dict,%@,%@", aString, error);
+//        TFLogError(@"error convert json string to dict,%@,%@", aString, error);
         return nil;
     }
     else {
@@ -524,7 +523,7 @@
     NSArray *resultArray = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:&error];
     
     if (error) {
-        TFLogError(@"error convert json string to array,%@,%@", aString, error);
+//        TFLogError(@"error convert json string to array,%@,%@", aString, error);
         return nil;
     } else {
         return resultArray;
@@ -565,11 +564,11 @@ static char associatedObjectNamesKey;
 }
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
-    TFLogWarn(@"setValue %@ forUndefinedKey %@",value,key);
+//    TFLogWarn(@"setValue %@ forUndefinedKey %@",value,key);
 }
 
 - (void)setNilValueForKey:(NSString *)key {
-    TFLogWarn(@"setNilValue forKey %@",key);
+//    TFLogWarn(@"setNilValue forKey %@",key);
 }
 
 @end

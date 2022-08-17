@@ -7,7 +7,7 @@
 
 #import "NSFileManager+Addition.h"
 #include <sys/stat.h>
-#import "TFoundationLogging.h"
+#import "TFoundation+Options.h"
 
 @implementation NSFileManager (Addition)
 
@@ -42,7 +42,7 @@ BOOL ineternal_createDirectory(NSString *dirPath, BOOL isOverwrite)
         if (isOverwrite) {
             ret = [fileMng removeItemAtPath:dirPath error:&error];
             ret &= (error == nil);
-            TFLogError(@"%s, %@", __FUNCTION__, error);
+            
         }
     }
     
@@ -52,7 +52,7 @@ BOOL ineternal_createDirectory(NSString *dirPath, BOOL isOverwrite)
                                   attributes:nil
                                        error:&error];
         ret &= (error == NULL);
-        TFLogError(@"%s, %@", __FUNCTION__, error);
+        
     }
     
     return ret;
@@ -83,7 +83,7 @@ BOOL internal_copyFile(NSString *from, NSString *to, BOOL isRemove)
             ret = [[NSFileManager defaultManager] copyItemAtPath:from toPath:to error:&error];
         }
         ret &= (error==NULL);
-        TFLogError(@"%s, %@", __FUNCTION__, error);
+        
     }
     
     return ret;
@@ -160,7 +160,6 @@ BOOL internal_copyDirectory(NSString *from, NSString *to, BOOL isRemove)
     NSDictionary *attribute = [fileMng attributesOfItemAtPath:path error:&error];
     long long fileLen = 0;
     if (error) {
-        TFLogError(@"%s, %@", __FUNCTION__, error);
     }
     else {
         fileLen = [[attribute objectForKey:NSFileSize] longLongValue];

@@ -7,7 +7,7 @@
 
 #import "TAudioPlayer.h"
 #import <AudioToolBox/AudioToolbox.h>
-#import "TFoundationLogging.h"
+//#import "TFoundationLogging.h"
 
 @implementation TAudioPlayer
 
@@ -32,7 +32,7 @@
     OSStatus err = AudioServicesCreateSystemSoundID((__bridge CFURLRef)urlFile, &ID);
     
     if (err) {
-        TFLogError(@"play sound cannot create file url [%@]",urlFile);
+//        TFLogError(@"play sound cannot create file url [%@]",urlFile);
         return ;
     }
     

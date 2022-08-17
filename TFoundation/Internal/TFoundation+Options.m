@@ -7,11 +7,6 @@
 
 #import "TFoundation+Options.h"
 
-#ifdef DEBUG
-static TFoundationLoggingLevel kTFoundationLoggingLevel = TFoundationLoggingLevelDebug;
-#else
-static TFoundationLoggingLevel kTFoundationLoggingLevel = TFoundationLoggingLevelError;
-#endif
 static NSString *kTFoundationKeyChainIdentity = nil;
 static NSString *kTFoundationKeychainGroup = nil;
 
@@ -36,13 +31,4 @@ static NSString *kTFoundationKeychainGroup = nil;
 		kTFoundationKeychainGroup = keychainGroup;
 	}
 }
-
-+ (TFoundationLoggingLevel)loggingLevel {
-    return kTFoundationLoggingLevel;
-}
-
-+ (void) setLoggingLevel:(TFoundationLoggingLevel)level {
-    kTFoundationLoggingLevel = level;
-}
-
 @end

@@ -10,7 +10,6 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import <GTMBase64/GTMBase64.h>
 #import "NSArray+safe.h"
-#import "TFoundationLogging.h"
 
 @implementation NSString(MD5)
 
@@ -142,7 +141,7 @@
         if (!error) {
             json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         } else {
-            TFLogError(@"error convert to json,%@,%@",error,aObj);
+//            TFLogError(@"error convert to json,%@,%@",error,aObj);
         }
     }
     

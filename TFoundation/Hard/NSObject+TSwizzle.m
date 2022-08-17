@@ -7,20 +7,17 @@
 
 #import "NSObject+TSwizzle.h"
 #import <objc/runtime.h>
-#import "TFoundationLogging.h"
 
 @implementation NSObject (TSwizzle)
 
 + (BOOL)overrideMethod:(SEL)origSel withMethod:(SEL)altSel {
     Method origMethod =class_getInstanceMethod(self, origSel);
     if (!origMethod) {
-        TFLogError(@"original method %@ not found for class %@", NSStringFromSelector(origSel), [self class]);
         return NO;
     }
     
     Method altMethod =class_getInstanceMethod(self, altSel);
     if (!altMethod) {
-        TFLogError(@"original method %@ not found for class %@", NSStringFromSelector(altSel), [self class]);
         return NO;
     }
     
@@ -36,13 +33,11 @@
 + (BOOL)exchangeMethod:(SEL)origSel withMethod:(SEL)altSel {
     Method origMethod =class_getInstanceMethod(self, origSel);
     if (!origMethod) {
-        TFLogError(@"original method %@ not found for class %@", NSStringFromSelector(origSel), [self class]);
         return NO;
     }
     
     Method altMethod =class_getInstanceMethod(self, altSel);
     if (!altMethod) {
-        TFLogError(@"original method %@ not found for class %@", NSStringFromSelector(altSel), [self class]);
         return NO;
     }
     
