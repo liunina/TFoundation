@@ -35,13 +35,6 @@ Pod::Spec.new do |s|
 	  ss.source_files = 'TFoundation/Preferences/**/*'
   end
   
-#  s.subspec 'NetWork' do |ss|
-#	  ss.dependency 'TFoundation/Internal'
-#	  ss.dependency 'AFNetworking'
-#	  ss.public_header_files = 'TFoundation/NetWork/*.h'
-#	  ss.source_files = 'TFoundation/NetWork/**/*'
-#  end
-  
   s.subspec 'Category' do |ss|
 	   ss.dependency 'GTMBase64'
 	   ss.dependency 'JSONModel'
